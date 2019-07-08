@@ -23,9 +23,11 @@ public class PlayService {
 		//Utilizado para validacao no console
 		board.showBoard();
 	
-		if (board.fullBoard()) 
+		if (board.fullBoard()) {
+			game.setPlayerWinner("Draw");
 			return new ResultDto("Partida finalizada", "Draw");
-		
+		}
+					
 		if (winner(board) == 0)
 			return new ResultDto("Jogada Realizada com Sucesso", "");
 		
