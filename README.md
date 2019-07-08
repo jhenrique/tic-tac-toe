@@ -1,6 +1,6 @@
 # tic-tac-toe
 
-API to play tic-tac-toe (Necessário java 1.8 instalado na máquina caso rodar o JAR)
+API to play tic-tac-toe (Necessário java 1.8 instalado na máquina caso rodar o JAR) por default a porta é 8089.
 
 As tecnlonologias utilizada foram o java, maven e spring boot.
 
