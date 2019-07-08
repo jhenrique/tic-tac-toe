@@ -56,10 +56,4 @@ public class GameController {
 		
 		return ResponseEntity.ok(result);
 	}
-
-	@RequestMapping(value = "/game/list", method = RequestMethod.GET)
-	public ResponseEntity<Map<String, Game>> list() {
-		return ResponseEntity.ok(mapGames);
-	}
-
 }

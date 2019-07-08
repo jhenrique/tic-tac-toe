@@ -20,9 +20,6 @@ public class PlayService {
 		board.setPosicao(movement);
 		game.setPlayerLast(movement.getPlayer());
 		
-		//Utilizado para validacao no console
-		board.showBoard();
-	
 		if (board.fullBoard()) {
 			game.setPlayerWinner("Draw");
 			return new ResultDto("Partida finalizada", "Draw");
