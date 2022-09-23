@@ -25,7 +25,7 @@ public class ValidateUtil {
 			return ResponseEntity.badRequest().body("Partida já finalizada, c o ganhandor: " + game.getPlayerWinner());
 		}
 
-	    //Caso seja a primeira jogada confirma se eh primeiro, caso nao verifica de quem eh a vez
+	    //Caso seja a primeira jogada confirma se eh primeiro, caso nao verifica de quem eh a vez.
 		if ((game.getPlayerLast() == null && !game.getPlayerStart().equals(movement.getPlayer()))
 				|| (game.getPlayerLast() != null && game.getPlayerLast().equals(movement.getPlayer())))
 			return ResponseEntity.badRequest().body("Não é o turno do jogador");
